@@ -22,23 +22,23 @@ elif answer == "Right":
         print("You has betrayed by them and captured by police, you lose.")
     elif answer == "U":
         print("You move alone then you escape.")
-    else:
-        print("Not in valid option, you lose")
+        print("You have escaped from the prison. And polices are searching you.")
 
-    print("You have escaped from the prison. And polices are searching you.")
-    answer = input("Now you have escaped and you have to decide where would like to go?Type City for city and Village for country side.")
-    if answer == "City":
-        answer = input("Now decide how would you go to city?By foot or by car. Type F for by foot and Type C for by car.")
-        if answer == "C":
-            print("You don't have car. So you stop the car on road and rob the car. Then you got arrested by police at the check point. You lose.")
-        elif answer == "F":
-            print("You die because of lacking food and water. You lose.")
+        answer = input("Now you have escaped and you have to decide where would like to go?Type City for city and Village for country side.")
+        if answer == "City":
+            answer = input("Now decide how would you go to city?By foot or by car. Type F for by foot and Type C for by car.")
+            if answer == "C":
+                print("You don't have car. So you stop the car on road and rob the car. Then you got arrested by police at the check point. You lose.")
+            elif answer == "F":
+                print("You die because of lacking food and water. You lose.")
+            else:
+                print("Not in valid options, you lose.")
+        elif answer == "Village":
+            print("Congratulation!, you have completely escape from prison.")
         else:
-            print("Not in valid options, you lose.")
-    elif answer == "Village":
-        print("Congratulation!, you have completely escape from prison.")
+            print("Not in valid option, you lose")
     else:
-        print("Not in valid options, you lose.")
+            print("Not in valid options, you lose.")
     
 else:
     print("Not in valid options, you lose")
